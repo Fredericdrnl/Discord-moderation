@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from time import sleep
 
-class ClearCommand(commands.Cog):
+class ClearCommands(commands.Cog):
     def __init__(self, bot : commands.Bot) -> None:
         self.bot = bot
         
@@ -26,4 +26,4 @@ class ClearCommand(commands.Cog):
             await message.delete()
 
 def setup(bot):
-    bot.add_cog(ClearCommand(bot))
+    bot.add_cog(ClearCommands(bot))

@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-class KickCommand(commands.Cog):
+class KickCommands(commands.Cog):
     def __init__(self, bot : commands.Bot) -> None:
         self.bot = bot
         
@@ -25,4 +25,4 @@ class KickCommand(commands.Cog):
             return await ctx.send(embed=embedkick)
         
 def setup(bot):
-    bot.add_cog(KickCommand(bot))
+    bot.add_cog(KickCommands(bot))

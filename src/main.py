@@ -2,6 +2,13 @@ import os
 import discord
 from bot import Moderation
 
+# * This is my main method
+# ! this can be aonly static
+# ? Do I need to check for exception in this
+# todo : we need to call some method from this
+# @param args   
+# @throws Exception
+
 class Main():
     @staticmethod
     def run():

@@ -8,9 +8,7 @@ class On_Member_JoinEvent(commands.Cog):
     @commands.Cog.listener()
     async def on_member_join(self, member : discord.Member):
         channel : discord.TextChannel = self.bot.get_channel(1074701940069502976)
-        print(member.guild.roles)
         role = discord.utils.get(member.guild.roles, id=1074697517234651217, name="Visiteur")
-        print(role)
         await member.add_roles(role)
 
         embedarrived = discord.Embed(title = "Bienvenue " + str(member.name) + " sur le serveur !")
